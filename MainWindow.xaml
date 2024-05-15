@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Label Content="Deposit(+)/Withdrawal(-)" HorizontalAlignment="Left" Margin="63,67,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="depositTextBox" HorizontalAlignment="Left" Height="23" Margin="233,67,0,0" TextWrapping="Wrap" Background="LightBlue" VerticalAlignment="Top" Width="120" />
     </Grid>
 </Window>
