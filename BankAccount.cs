@@ -8,9 +8,18 @@ namespace Bank_account
         {
             if (amount > Saldo)
             {
-                throw new BankException("Not enough money on your account");
+                throw new BankException("not enough money on your account");
             }
             Saldo -= amount;
+        }
+
+        public void Deposit(double amount)
+        {
+            if (amount > 2500)
+            {
+                throw new BankException("deposit too large");
+            }
+            Saldo += amount;
         }
     }
 }
