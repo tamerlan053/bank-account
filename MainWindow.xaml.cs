@@ -27,6 +27,11 @@ namespace Bank_account
         {
             try 
             {
+                double amount = Convert.ToDouble(depositTextBox.Text);
+                if (amount < 0)
+                {
+                    _bankaccount.Withdraw(-amount);
+                }
             } catch (Exception ex)
             {
             }
