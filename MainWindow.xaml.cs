@@ -16,6 +16,7 @@ namespace Bank_account
     /// </summary>
     public partial class MainWindow : Window
     {
+        private BankAccount _bankaccount;
         public MainWindow()
         {
             InitializeComponent();
