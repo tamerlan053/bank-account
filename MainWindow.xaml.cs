@@ -31,6 +31,9 @@ namespace Bank_account
                 if (amount < 0)
                 {
                     _bankaccount.Withdraw(-amount);
+                } else
+                {
+                    _bankaccount.Deposit(amount);
                 }
             } catch (Exception ex)
             {
