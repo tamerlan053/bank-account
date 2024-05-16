@@ -20,6 +20,12 @@ namespace Bank_account
         public MainWindow()
         {
             InitializeComponent();
+            _bankaccount = new BankAccount();
+        }
+
+        private void saldoButton_Click(object sender, RoutedEventArgs e)
+        {
+        
         }
     }
 }
