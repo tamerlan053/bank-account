@@ -25,7 +25,11 @@ namespace Bank_account
 
         private void saldoButton_Click(object sender, RoutedEventArgs e)
         {
-        
+            try 
+            {
+            } catch (Exception ex)
+            {
+            }
         }
     }
 }
