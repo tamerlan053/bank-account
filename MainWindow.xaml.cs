@@ -35,6 +35,7 @@ namespace Bank_account
                 {
                     _bankaccount.Deposit(amount);
                 }
+                saldoTextBlock.Text = $"Saldo {_bankaccount.Saldo:c}";
             } catch (Exception ex)
             {
             }
