@@ -42,6 +42,7 @@ namespace Bank_account
                 }
             } catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
             }
         }
     }
