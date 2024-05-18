@@ -36,6 +36,10 @@ namespace Bank_account
                     _bankaccount.Deposit(amount);
                 }
                 saldoTextBlock.Text = $"Saldo {_bankaccount.Saldo:c}";
+                if (_bankaccount.Saldo < 0)
+                {
+                    MessageBox.Show("you are in red!!");
+                }
             } catch (Exception ex)
             {
             }
