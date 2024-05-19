@@ -14,6 +14,15 @@ namespace Bank_account
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string name = nameTextBox.Text;
+            if (name != "")
+            {
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Title = name;
+                mainWindow.ShowDialog();
+                nameTextBox.Clear();
+                startButton.IsEnabled = false;
+            }
         }
     }
 }
